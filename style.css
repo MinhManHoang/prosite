@@ -1,0 +1,44 @@
+:root {
+    --primary-blue: #0000A4;
+    --font-bold: 700;
+    --primary-green: #00852C;
+    --bg-green: #F2FBF5;
+}
+
+body {
+    display: grid;
+    font-family: graphik;
+    margin: .625rem 16%;
+}
+
+.mainBlue {
+    color: var(--primary-blue);
+}
+
+.fontBold {
+    font-weight: var(--font-bold);
+}
+
+.mainGreen {
+    color: var(--primary-green);
+}
+
+.bgGreen {
+    background-color: var(--bg-green);
+}
+
+.flexbox {
+    display: flex;
+    gap: 5px;
+}
+.topHeader {
+    justify-content: space-between;
+}
+
+#topHeaderLeft {
+    gap: 24px;
+} 
+
+#topHeaderRight {
+    gap: 10px;
+}
