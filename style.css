@@ -5,6 +5,8 @@
     --bg-green: #F2FBF5;
     --primary-white: #fff; 
     --bg-white: #fff;
+    --bgSecondary-blue: #D2E1FF;
+    --button-blue: #0000FF;
 }
 
 body {
@@ -50,9 +52,21 @@ body {
     background-color: var(--bg-white);
 }
 
+.bgSecondaryBlue {
+    background-color: var(--bgSecondary-blue);
+}
+
+.buttonBlue {
+    background-color: var(--button-blue);
+}
+
 .flexbox {
     display: flex;
     gap: .3125rem;
+}
+
+.grid {
+    display: grid;
 }
 
 .bigText {
@@ -158,4 +172,45 @@ body {
 #languageSelector img {
     width: 1.5rem;
     height: auto;
+}
+
+#hero {
+    height: 20.25rem;
+    font-size: 3rem;
+    margin: 1.5rem 22rem;
+    border-radius: 1rem;
+    grid-template-columns: 1.5rem 49% 49%;
+    grid-template-rows: 2.5rem 55% 20% 2.5rem;
+}
+
+#heroText {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+#hero p {
+
+}
+
+#heroButton {
+    width: 5.9375rem;
+    height: 3.375rem;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    grid-column:  2 / 3;
+    grid-row: 3 / 4;
+    border: none;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    clip-path: ellipse(56% 110% at 56%);
 }
