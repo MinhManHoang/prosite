@@ -67,6 +67,7 @@ body {
     justify-content: space-between;
     padding: .25rem 22rem;
     align-items: center;
+    font-size: .75rem;
 }
 
 #topHeaderLeft {
@@ -76,6 +77,10 @@ body {
 #topHeaderRight {
     gap: .625rem;
     align-items: center;
+}
+
+#topHeaderRight .fontBold {
+    font-size: 14px;
 }
 
 #mainHeader {
