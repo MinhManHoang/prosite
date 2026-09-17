@@ -52,7 +52,7 @@ body {
 
 .flexbox {
     display: flex;
-    gap: 5px;
+    gap: .3125rem;
 }
 
 .bigText {
@@ -65,22 +65,22 @@ body {
 
 .topHeader {
     justify-content: space-between;
-    padding: 0.25rem 22rem;
+    padding: .25rem 22rem;
     align-items: center;
 }
 
 #topHeaderLeft {
-    gap: 24px;
+    gap: 1.5rem;
 } 
 
 #topHeaderRight {
-    gap: 10px;
+    gap: .625rem;
     align-items: center;
 }
 
 #mainHeader {
     justify-content: space-between;
-    padding: 0.75rem 22rem;
+    padding: .75rem 22rem;
 }
 
 .logo {
@@ -88,8 +88,12 @@ body {
     height: auto;
 }
 
+.gap {
+    gap: .5rem;
+}
+
 #zoekbar {
-    border-radius: 50px;
+    border-radius: 3.125rem;
     border: none;
     align-items: center;
     padding: 0 1rem;
@@ -98,18 +102,18 @@ body {
 #inputBar {
     width: 29rem;
     height: 3rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     border: none;
 }
 
 #shophulp {
     align-items: center;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     padding: 0 1rem;
 }
 
 #shopText {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 900;
 }
 
@@ -117,4 +121,36 @@ body {
     align-items: center;
     width: 10.25rem;
     justify-content: space-between;
+}
+
+#bottomHeader {
+    justify-content: space-between;
+    padding: .25rem 22rem;
+    align-items: center;
+    height: 3.5rem;
+    border-bottom: 0.125rem solid;
+    border-color: #D8D8D8;
+}
+
+#bottomHeaderLeft {
+    font-size: .875rem;
+}
+
+#bottomHeaderLeft div {
+    align-items: center;
+}
+
+#bottomHeaderRight {
+    align-items: center;
+    gap: 1rem;
+    font-size: .75rem;
+}
+
+#languageSelector {
+    align-items: center;
+}
+
+#languageSelector img {
+    width: 1.5rem;
+    height: auto;
 }
