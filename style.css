@@ -176,6 +176,10 @@ body {
     height: auto;
 }
 
+#languageSelector p {
+    margin-left: .25rem;
+}
+
 #hero {
     height: 20.25rem;
     font-size: 3rem;
@@ -215,6 +219,7 @@ h1 {
     grid-column: 3 / 4;
     grid-row: 1 / 5;
     clip-path: ellipse(56% 110% at 56%);
+    border-radius: 0 1rem 1rem 0;
 }
 
 #productBlocks {
