@@ -7,11 +7,14 @@
     --bg-white: #fff;
     --bgSecondary-blue: #D2E1FF;
     --button-blue: #0000FF;
+    --carrousel-pink: #FFC587;
+    --carrousel-blue: #9EBDF4;
 }
 
 body {
     display: grid;
     margin: 0;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -62,7 +65,6 @@ body {
 
 .flexbox {
     display: flex;
-    gap: .3125rem;
 }
 
 .grid {
@@ -213,4 +215,102 @@ h1 {
     grid-column: 3 / 4;
     grid-row: 1 / 5;
     clip-path: ellipse(56% 110% at 56%);
+}
+
+#productBlocks {
+    margin: 1.5rem 22rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+#blocks img {
+    border-radius: 1rem;
+}
+
+#productBlocks p {
+    font-size: 1.125rem;
+}
+
+#blocks {
+    gap: 2.5rem;
+}
+
+#blocks p {
+    position: absolute;
+    padding: .5rem;
+}
+
+#blocks img {
+    width: 10.75rem;
+    height: auto;
+}
+
+#carrousel {
+    gap: 2.6rem;
+}
+
+#carrousel img {
+    width: 17.3125rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+#carrousel p {
+    padding: 1.5rem;
+}
+
+#carrousel button {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    border: none;
+    border-radius: 0.25rem;
+    align-items: center;
+}
+
+.topCarrousel {
+    width: 17.3125rem;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.flexcolumn {
+    flex-direction: column;
+}
+
+.carrouselBlue {
+    background-color: var(--carrousel-blue);
+}
+
+.carrouselPink {
+    background-color: var(--carrousel-pink);
+}
+
+#firstButton {
+    left: 25rem;
+    bottom: -4rem;
+}
+
+#secondButton {
+    left: 44rem;
+    bottom: -4rem;
+}
+
+#thirdButton {
+    left: 64rem;
+    bottom: -4rem;
+}
+
+#fourthButton {
+    left: 84rem;
+    bottom: -4rem;
+}
+
+#secondCarrouselP {
+    padding-bottom: .375rem !important;
+}
+
+#disclaimer {
+    font-size: 0.625rem !important;
+    text-align: end;
+    padding: 0 !important;
+    color: #6d6d6d;
 }
